@@ -47,7 +47,7 @@ int main(void)
 
 	lastDigit = n % 10;
 
-	printf("Last digit of, %d, is %d %s", n, lastDigit, greaterOrLess(lastDigit));
+	printf("Last digit of %d is %d %s", n, lastDigit, greaterOrLess(lastDigit));
 
 	return (0);
 }
