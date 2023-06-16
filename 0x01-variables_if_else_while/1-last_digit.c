@@ -5,14 +5,13 @@
 
 
 /**
- * greaterOrLess - Utility function
+ * greaterOrLess - Check if a number satisfies condition
  *
- * Description: 'Checks the value of lastDigit in condition'
+ * @lastDigit: The number to be checked
  *
- * Return: Always 0 (Success)
+ * Return: a string based on condition
  */
 
-/* lastDigit is a parameter or argument*/
 const char *greaterOrLess(int lastDigit)
 {
 	if (lastDigit > 5)
