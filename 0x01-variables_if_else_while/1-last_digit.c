@@ -17,15 +17,15 @@ const char *greaterOrLess(int lastDigit)
 {
 	if (lastDigit > 5)
 	{
-		return ("and is greater than 5");
+		return ("and is greater than 5\n");
 	}
 	else if (lastDigit == 0)
 	{
-		return ("and is 0");
+		return ("and is 0\n");
 	}
 	else
 	{
-		return ("and is less than 6 and not 0");
+		return ("and is less than 6 and not 0\n");
 	}
 }
 
