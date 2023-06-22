@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_most_number - prints nums except 2 and 4
+ * print_most_numbers - prints nums except 2 and 4
  *
  * Description: "a function that prints the numbers, from 0 to 9"
  *
@@ -15,7 +15,7 @@ void print_most_numbers(void)
 
 	for (dig = 48; dig <= 57; dig++)
 	{
-		if(dig == 50 || dig == 52)
+		if (dig == 50 || dig == 52)
 		{
 			continue;
 		}
