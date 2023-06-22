@@ -12,7 +12,7 @@ void more_numbers(void)
 	int num;
 	int counter;
 
-	for (counter = 0; counter < 10; counter++)
+	for (counter = 1; counter <= 10; counter++)
 	{
 		for (num = 0; num <= 14; num++)
 		{
@@ -20,6 +20,10 @@ void more_numbers(void)
 			{
 				_putchar('1');
 				_putchar(num % 10 + '0');
+			}
+			else
+			{
+				_putchar('0' + num);
 			}
 		}
 		_putchar('\n');
