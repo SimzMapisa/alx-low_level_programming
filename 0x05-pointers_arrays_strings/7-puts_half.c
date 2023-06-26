@@ -16,17 +16,17 @@ void puts_half(char *str)
 	int n;
 	int l;
 
-        l = 0;
+	l = 0;
 
-        for (j = 0; str[j] != '\0'; j++)
+	for (j = 0; str[j] != '\0'; j++)
 	{
 		j++;
 	}
 
-        n = (j / 2);
+	n = (j / 2);
 
-        if ((l % 2) == 1)
-	{	
+	if ((l % 2) == 1)
+	{
 		n = ((l + 1) / 2);
 	}
 
