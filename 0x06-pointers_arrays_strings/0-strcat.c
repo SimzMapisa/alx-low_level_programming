@@ -21,11 +21,13 @@ char *_strcat(char *dest, char *src)
 		length++;
 	}
 
-	for (i = 0; i != '\0'; i++)
+	for (i = 0; src[i] != '\0'; i++)
 	{
-		length++;
 		dest[length] = src[i];
+		length++;
 	}
+
+	dest[length] = '\0';
 
 	return (dest);
 }
