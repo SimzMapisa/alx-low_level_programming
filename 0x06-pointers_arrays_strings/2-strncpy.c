@@ -14,22 +14,17 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int length = 0;
+	int idx;
 
-	do {
-		dest[length] = src[length];
-		length++;
+	for (idx = 0; idx < n && src[idx] != '\0'; idx++)
+	{
+		dest[idx] = src[idx];
+	}
 
-		if (n <= length)
-		{
-			return (dest);
-		}
-		else
-		{
-			dest[length] = '\0';
-		}
-	} while (length < n && src[length] != '\0');
-
+	for (; idx < n; idx++)
+	{
+		dest[idx] = '\0';
+	}
 
 	return (dest);
 }
