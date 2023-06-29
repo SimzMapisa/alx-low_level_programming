@@ -2,10 +2,11 @@
 
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase
+ * @str: string
  *
  * Description: "changes all lowercase letters of a string to uppercase"
  *
- * Return: a string 
+ * Return: a string
  *
  */
 
