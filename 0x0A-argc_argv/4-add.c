@@ -21,9 +21,10 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("0\n");
+		return (0);
 	}
 
-	for (idx = 1; idx < argc; idx++)
+	for (idx = 0; idx < argc; idx++)
 	{
 		num = atoi(argv[idx]);
 
