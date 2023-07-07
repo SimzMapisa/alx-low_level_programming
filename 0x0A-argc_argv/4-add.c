@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (idx = 0; idx < argc; idx++)
+	for (idx = 1; idx < argc; idx++)
 	{
 		num = atoi(argv[idx]);
 
