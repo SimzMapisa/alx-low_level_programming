@@ -14,7 +14,7 @@
 
 int main(int argc, char *argv[])
 {
-	int total = 0;
+	long int total = 0;
 	int idx;
 	int num;
 
@@ -35,6 +35,6 @@ int main(int argc, char *argv[])
 		}
 		total += num;
 	}
-	printf("%d\n", total);
+	printf("%ld\n", total);
 	return (0);
 }
