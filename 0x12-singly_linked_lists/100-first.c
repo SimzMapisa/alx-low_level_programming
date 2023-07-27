@@ -3,7 +3,11 @@
 void first(void)__attribute__((constructor));
 
 /**
+ * first - func that runs before main
  *
+ * Description: "func that runs before main"
+ *
+ * Return: nothing
  */
 
 void first(void)
