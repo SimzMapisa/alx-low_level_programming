@@ -9,19 +9,36 @@
  * Return: integer
  */
 
+/**
+ * @i: index
+ */
+int is_prime_rec_intermediate(int n, int i);
+
 int is_prime_number(int n)
 {
-	int i = 2;
 
 	if (n <= 1)
 		return (0);
+	return (is_prime_rec_intermediate(n, 2));
+}
 
-	for ( ; i * i <= n; i++)
-	{
-		if (n % i == 0)
-		{
-			return (0);
-		}
-	}
-	return (1);
+/**
+ * is_prime_rec_intermediate - check if num is prime
+ * @n: integer
+ * @i: index
+ *
+ * Description: "checks if number is prime"
+ *
+ * Return: integer
+ */
+
+
+int is_prime_rec_intermediate(int n, int i)
+{
+	if (i * i > n)
+		return (1);
+	if (n % i == 0)
+		return (0);
+
+	return (is_prime_rec_intermediate(n, i + 1));
 }
