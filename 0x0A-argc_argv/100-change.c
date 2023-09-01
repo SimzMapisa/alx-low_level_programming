@@ -5,6 +5,10 @@
  * main - entry point
  * @argc: length of the array of args
  * @argv: array of string args
+ *
+ * Description: "prints min number of coins"
+ *
+ * Return: Always 0
  */
 
 int main(int argc, char *argv[])
