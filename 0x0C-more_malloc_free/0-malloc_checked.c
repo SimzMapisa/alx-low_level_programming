@@ -4,7 +4,7 @@
 
 /**
  * malloc_checked - allocates memory
- * @b: size
+ * @b: size to allocate
  *
  * Description: "allocates memory using malloc"
  *
