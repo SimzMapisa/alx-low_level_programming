@@ -15,7 +15,8 @@
 
 int main(int argc, char *argv[])
 {
-	int num1, num2, mul, i;
+	long int num1, num2, mul;
+	int i;
 
 	if (argc != 3)
 	{
@@ -43,6 +44,6 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[2]);
 
 	mul = num1 * num2;
-	printf("%d\n", mul);
+	printf("%ld\n", mul);
 	return (0);
 }
