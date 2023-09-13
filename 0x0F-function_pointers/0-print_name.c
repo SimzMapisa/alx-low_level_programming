@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * print_name - prints name in upper/as-is
  * @name: pointer to name
@@ -10,5 +12,12 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	(*f)(name);
+	if (name == NULL || f == NULL)
+	{
+		exit(1);
+	}
+	else
+	{
+		(*f)(name);
+	}
 }
