@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
 	if (strcmp(argv[2], "%") == 0 && atoi(argv[3]) == 0)
 	{
 		printf("Error\n");
+		exit(100);
 	}
 	a1 = atoi(argv[1]);
 	a2 = atoi(argv[3]);
