@@ -21,11 +21,11 @@ list_t *add_node(list_t **head, const char *str)
 	if (new_node->str == NULL)
 	{
 		free(new_node);
-		return(NULL);
+		return (NULL);
 	}
 
 	current_char = new_node->str;
-	while(*current_char != '\0')
+	while (*current_char != '\0')
 	{
 		len++;
 		current_char++;
