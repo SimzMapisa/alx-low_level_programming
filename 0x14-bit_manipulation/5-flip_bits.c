@@ -2,9 +2,7 @@
 
 /**
  * flip_bits - Returns number of bits you would need to flip.
- *
  * @n: First number.
- *
  * @m: Second number.
  *
  * Return: Number of bits to change.
@@ -13,7 +11,7 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int idx;
-	int count_dig;
+	int count_dig = 0;
 	unsigned long int current_bit;
 	unsigned long int exclusive = n ^ m;
 
