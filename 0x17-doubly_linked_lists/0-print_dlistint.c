@@ -1,4 +1,4 @@
-#inlcude "lists.h"
+#include "lists.h"
 
 /**
  * print_dlistint - prints the elements of the list
@@ -17,14 +17,14 @@ size_t print_dlistint(const dlistint_t *h)
 		return (1);
 	while (h)
 	{
+		printf("%d\n", h->n);
+
 		if (h->next == NULL)
 		{
-			node_count += 1;
-			return(node_count);
+			return (node_count + 1);
 		}
 		node_count += 1;
-		*h++;
-
+		h = h->next;
 	}
 	return (node_count);
 }
